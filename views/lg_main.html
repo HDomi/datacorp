@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>::패턴테크 데이터 가공::</title>
+    <meta property="og:locale" content="ko_KR" />
+    <!--    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favi/favicon-16x16.png">
+    <link rel="shortcut icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">-->
+    <link rel="shortcut icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../assets/styles/icon.css">
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+
+    <script src="../assets/scripts/jqery-3.5.1.min.js"></script>
+    <script src="../assets/scripts/common.js"></script>
+    
+    
+</head>
+
+<body>
+    <div class="img_popup_wrap">
+        <div class="up_img_tit">이미지를 아무 곳에나 놓으세요.<span><br>(한 번에 1개 파일만 가능)</span></div>
+    </div>
+    <div class="popup_wrap">
+        <div class="popup_box">
+            <div class="icon_b ic_close"></div>
+            <div class="icon_b ic_popup"></div>
+            <div class="pop_txt">honggildong@patterntech.co.kr</div>
+            <div class="pop_sub_txt">로 임시 비밀번호가 전송되었습니다.</div>
+            <a href="#"><div class="m_btn dib cl_pop" style="margin-top: 70px;">확인</div></a>
+        </div>
+    </div>
+    
+    <header id="header"></header>
+
+    <div class="main_wrap">
+        <div class="main_cnt">
+            <div class="main_sec" id="drop">
+                <div class="sec1 sec_default m_bg">
+                    <div class="recs">
+                        <div class="bg_circle green cir1"></div>
+                        <div class="bg_circle blue cir2"></div>
+                        <div class="bg_circle try1"><img src="../assets/images/bg_try.png"></div>
+                    </div>
+                    <div class="main_tit top_tit" style="margin-top:70px;"><div class="icon_b ic_img"></div>이미지를 넣기만 하세요!</div>
+                    <div class="sub_tit">한 장의 이미지를 최대 100장으로 늘려드립니다.</div>   
+                    <div class="main_cnt">
+                        <div class="cnt_box dib">
+                            <div class="cnt_wrap dib">
+                                <div class="m_dog"><img src="../assets/images/dog.png"></div>
+                                <div class="icon_b ic_b_hwa"></div>
+                                <div class="sel_img_sec dib m_sel_img_sec">
+                                    <div class="sel_img_box dib">
+                                        <ul class="sel_img_st dib">
+                                            <li class="icon_b ic_a4"></li>
+                                            <a href="../views/img_aug_sel.html"><li class="sel_btn mc">이미지 업로드</li></a>
+                                            <li class="sel_sub">또는 파일 올려놓기</li>
+                                        </ul>
+                                    </div>
+                                    <div class="sel_subt1">회원가입 없이 무료 체험</div>
+                                    <div class="sel_subt2"><div class="icon_b ic_subt"></div>회원 가입 시 더 많은 무료 체험 횟수와 크레딧 제공!</div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="sec2 sec_default">
+                    <div class="recs">
+                        <div class="bg_circle green cir3"></div>
+                    </div>
+                    <div class="main_cnt">
+                        <div class="cnt_box dib m_cnt_box" style="margin-top: 120px;">
+                            <div class="box dib" style="width: 85%;">
+                                <div class="main_tit top_tit"><div class="icon_b ic_stack"></div>1장의 이미지를 최대 100장으로!</div><br>
+                                <div class="cnt_wrap dib"style="margin-bottom:60px;">
+                                    <div class="m_dog2 dib" style="text-align: left;"><img src="../assets/images/dog.png"><br><span style="color: var(--main-col);font-weight: bold;">원본</span></div>
+                                    <div class="icon_b ic_cir_hwa"></div>
+                                    <div class="m_dogs dib" style="text-align: left;"><img src="../assets/images/dogs.png"><br><span style="color: var(--main-col);font-weight: bold;">증강된 이미지</span></div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="sec3 sec_default m_bg m_sec3">
+                    <div class="recs">
+                        <div class="bg_circle green cir4"></div>
+                        <div class="bg_circle blue cir5"></div>
+                        <div class="bg_circle red try2"><img src="../assets/images/bg_try.png"></div>
+                    </div>
+                    <div class="main_tit top_tit main_3_tit" style="margin-top:50px; text-align: left;"><span style="text-align: left; font-size: 14px; color: #777E90;">IMAGE SEGMENTATION SERVICE</span><br><div class="icon_b ic_img"></div>AI 이미지 관련 모델을 학습하기 위한 이미지가 부족하신가요?</div>
+                    <div class="sub_tit main_3_tit_sub">걱정하지 마세요!<br>단 몇 번의 클릭으로 당신의 이미지를 다양하게 변형시켜 제공해 드립니다.</div>   
+                    <div class="main_cnt">
+                        <div class="cnt_box dib m_cnt_box">
+                            <div class="box dib" style="width: 85%;">
+                                <div class="cnt_wrap dib"style="margin-bottom:30px;">
+                                    <div class="m_dog2 dib" style="text-align: left;"><img src="../assets/images/graf.png"width="100%" height="auto"></div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="footer"></header>
+    </div>
+   
+    
+    
+    
+</body>
+<script>
+        $(document).ready(function(){
+            $("#header").load("./include/lg_header.html");
+            $("#footer").load("./include/footer.html");
+        });
+    </script>
+<script>
+    $(document).on({
+        dragenter: function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $(".img_popup_wrap").css('display','block');
+        },
+        dragover: function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+        },
+        dragleave: function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if (e.clientX <= 0 ||
+                // compare clientX with the width of browser viewport
+                e.clientX >= $(window).width() ||
+                e.clientY <= 0 ||
+                e.clientY >= $(window).height())
+                $(".img_popup_wrap").css('display','none');
+        }
+    });
+</script>
+</html>
+
+

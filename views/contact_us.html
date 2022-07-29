@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>문의하기</title>
+    <meta property="og:locale" content="ko_KR" />
+    <!--    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favi/favicon-16x16.png">
+    <link rel="shortcut icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">-->
+    <link rel="shortcut icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../assets/styles/icon.css">
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+
+    <script src="../assets/scripts/jqery-3.5.1.min.js"></script>
+    <!--<script src="../assets/scripts/common.js"></script>-->
+    <script src="../assets/scripts/popup.js"></script>
+    
+    
+</head>
+
+<body>
+    <div class="img_popup_wrap">
+        <div class="up_img_tit">이미지를 아무 곳에나 놓으세요.<span><br>(한 번에 1개 파일만 가능)</span></div>
+    </div>
+    <header id="header"></header>
+    <div class="main_wrap">
+        <div class="main_cnt">
+            <div class="contact_sec">
+                <div class="recs">
+                    <div class="bg_circle green cir1"></div>
+                    <div class="bg_circle blue cir2"></div>
+                    <div class="bg_circle try1"><img src="../assets/images/bg_try.png"></div>
+                </div>
+                <div class="main_tit top_tit" style="margin-top:70px;"><div class="icon_b ic_question"></div>질문이 있으신가요?</div><br>
+                <div class="tbar_wrap dib contactus_wrap">
+                    <div class="q_tbar_wrap dib qtw_l">
+                        <div class="q_tbar_tit dib">CAREGORIES</div><br>
+                        <select id="browsers" name="browsers" >
+                            <option value="---카테고리---">--- 카테고리 ---</option>
+                            <option value="요금제/환불">요금제/환불</option>
+                            <option value="품질">품질</option>
+                            <option value="회원정보">회원정보</option>
+                            <option value="기타">기타<option>
+                        </select>
+                    </div>
+                    <div class="q_tbar_wrap dib qtw_r">
+                        <div class="q_tbar_tit dib">EMAIL</div><br>
+                        <input type="text" placeholder="example@asd.co.kr" class="q_tbar_email">
+                    </div>
+                    <input type="text" placeholder="제목" class="q_tbar_tit qtw_tit">
+                    <textarea type="text" placeholder="내용" class="q_tbar_ny qtw_txt"></textarea>
+                </div><br>
+                <a href="#" style="z-index: 996;"><div class="send_btn dib">
+                    메일전송
+                </div></a>
+                <div class="sub_tit" style="margin-top:70px;font-size: 15px; font-weight: normal;"><a href="#"><u>개인정보 보호약관</u></a>&nbsp;&nbsp;,&nbsp;&nbsp;<a href="#"><u>서비스 이용정책</u></a></div>
+            </div>
+        </div>
+        <header id="footer"></header>
+    </div>
+    
+    
+    
+ 
+</body>
+<script>
+    $(document).ready(function(){
+        $("#header").load("./include/header.html");
+        $("#footer").load("./include/footer.html");
+    });
+</script>
+
+
+</html>
+
+

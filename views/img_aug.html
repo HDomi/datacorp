@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>이미지 증강하기</title>
+    <meta property="og:locale" content="ko_KR" />
+    <!--    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favi/favicon-16x16.png">
+    <link rel="shortcut icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">-->
+    <link rel="shortcut icon" href="../assets/images/favi/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../assets/styles/icon.css">
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+
+    <script src="../assets/scripts/jqery-3.5.1.min.js"></script>
+    <script src="../assets/scripts/common.js"></script>
+    <script src="../assets/scripts/popup.js"></script>
+    
+    
+</head>
+
+<body>
+    <div class="img_popup_wrap">
+        <div class="up_img_tit">이미지를 아무 곳에나 놓으세요.<span><br>(한 번에 1개 파일만 가능)</span></div>
+    </div>
+    <header id="header"></header>
+    <div class="main_wrap">
+        <div class="main_cnt">
+            <div class="augimg_sec">
+                <div class="recs">
+                    <div class="bg_circle green cir1"></div>
+                    <div class="bg_circle blue cir2"></div>
+                    <div class="bg_circle try1"><img src="../assets/images/bg_try.png"></div>
+                </div>
+                <div class="main_tit top_tit" style="margin-top:70px;">이미지를 업로드하세요.</div><br>
+                <div class="sel_img_sec dib" style="float: inherit; margin-top: 40px; position: relative;">
+                    <div class="sel_img_box dib">
+                        <ul class="sel_img_st dib">
+                            <li class="icon_b ic_a4"></li>
+                            <a href="../views/img_aug_sel.html"><li class="sel_btn mc">이미지 업로드</li></a>
+                            <li class="sel_sub">또는 파일 올려놓기</li>
+                        </ul>
+                    </div>
+                    <div class="sel_subt1">회원가입 없이 무료 체험</div>
+                    <div class="sel_subt2"><div class="icon_b ic_subt"></div>회원 가입 시 더 많은 무료 체험 횟수와 크레딧 제공!</div>
+                </div>
+                
+            </div>
+        </div>
+        <header id="footer"></header>
+    </div>
+    
+    
+    
+ 
+</body>
+<script>
+    $(document).ready(function(){
+        $("#header").load("./include/header.html");
+        $("#footer").load("./include/footer.html");
+    });
+</script>
+<script>
+    $(document).on({
+        dragenter: function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $(".img_popup_wrap").css('display','block');
+        },
+        dragover: function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+        },
+        dragleave: function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if (e.clientX <= 0 ||
+                // compare clientX with the width of browser viewport
+                e.clientX >= $(window).width() ||
+                e.clientY <= 0 ||
+                e.clientY >= $(window).height())
+                $(".img_popup_wrap").css('display','none');
+        }
+    });
+</script>
+
+</html>
+
+
