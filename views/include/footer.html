@@ -1,0 +1,153 @@
+<div class="footer">
+    <div class="footer_wrap2">
+        <div class="ft_logo_sec li_tb dib">
+            <a href="/views/main.html">
+                <div class="icon_b pt_logo_w"></div>
+            </a>
+        </div>
+        <div class="foot_right">
+            <ul>
+                <!--<li><div class="email_top">Join our community 🔥</div></li>-->
+                <li><input type="email" class="join" placeholder="Enter your email"><div class="ic_hwasal"></div></li>
+            </ul>
+        </div>
+        <div class="ft_txt_sec li_tb dib">
+            <div class="foot_wrap2">
+                <div class="fsb_all_wrap">
+                    <div class="foot_sel_bar_wrap dib">
+                        <ul style="width: 100%;">
+                            <li class="fsb_li"onclick="clickFunc('1');">
+                                <div class="fsb_num fl">01</div>
+                                <div class="fsb_tit fl">Support</div>
+                                <div class="icon_b ic_s_ggs2 ggs_btn ggss1"></div><br>
+                                <div class="fsb_list flist1">
+                                    <ul class="">
+                                        <li class="fsb_tit2"><a href="../../views/faq.html">FAQ</a></li>
+                                        <li class="fsb_tit2"><a href="../../views/contact_us.html">Contact us</a></li>
+                                        <li class="fsb_tit2">Pricing</li>
+                                        <li class="fsb_tit2"><a href="../../views/refund_plan.html">Refund</a></li><br>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="fsb_li"onclick="clickFunc('2');">
+                                <div class="fsb_num fl">02</div>
+                                <div class="fsb_tit fl">Other Services</div>
+                                <div class="icon_b ic_s_ggs2 ggs_btn ggss2"></div><br>
+                                <div class="fsb_list flist2">
+                                    <ul class="">
+                                        <li class="fsb_tit2"><a href="../../views/release_plan.html">Release plan</a></li>
+                                        <li class="fsb_tit2">오디오 증강</li>
+                                        <li class="fsb_tit2">객체감지</li>
+                                        <li class="fsb_tit2">얼굴인식</li>
+                                        <li class="fsb_tit2">포즈인식</li>
+                                        <li class="fsb_tit2">OCR</li>
+                                        <li class="fsb_tit2">TTS</li>
+                                        <li class="fsb_tit2">STT</li>
+                                        <br>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="fsb_li"onclick="clickFunc('3');">
+                                <div class="fsb_num fl">03</div>
+                                <div class="fsb_tit fl">Company</div>
+                                <div class="icon_b ic_s_ggs2 ggs_btn ggss3"></div><br>
+                                <div class="fsb_list flist3">
+                                    <ul class="">
+                                        <li class="fsb_tit2">About us</li><br>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <br><br><br><br>
+
+                </div>
+            </div>
+        </div>
+        <div class="wid_line"></div>
+        <div class="copyr">Copyright © 2022 PatternTech Co., LTD All rights reserved</div>
+    </div>
+    <div class="footer_wrap">
+        <div class="ul_tb dib">
+            <div class="ft_logo_sec li_tb dib">
+                <a href="/views/main.html">
+                    <div class="icon_b pt_logo_w"></div>
+                </a>
+            </div>
+            <div class="ft_txt_sec li_tb dib">
+                <div class="foot_wrap">
+                    <div>
+                        <ul class="ulul ullu">
+                            <li class="foot_tit">Support</li>
+                            <li><a href="../../views/faq.html">FAQ</a></li>
+                            <li><a href="../../views/contact_us.html">Contact us</a></li>
+                            <li>Pricing</li>
+                            <li><a href="../../views/refund_plan.html">Refund</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="ulul">
+                            <li class="foot_tit">Other Services</li>
+                            <li><a href="../../views/release_plan.html">Release plan</a></li>
+                            <li>오디오 증강</li>
+                            <li>객체감지</li>
+                            <li>얼굴인식</li>
+                            <li>포즈인식</li>
+                            <li>OCR</li>
+                            <li>TTS</li>
+                            <li>STT</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="ulul">
+                            <li class="foot_tit">Company</li>
+                            <li>About us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ft_em_sec li_tb dib">
+                <div class="foot_right">
+                    <ul>
+                        <li><div class="email_top">Join our community 🔥</div></li>
+                        <li><input type="email" class="join" placeholder="Enter your email"><div class="ic_hwasal"></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wid_line"></div>
+        <div class="copyr">Copyright © 2022 PatternTech Co., LTD All rights reserved</div>
+    </div>
+</div>
+
+<script>
+    function clickFunc(param) {
+    var total = 3;
+    var blockClassNm = '.flist'+param;
+    var btnNum = $(blockClassNm).data("gubun");
+    
+    
+    if(btnNum == param) {
+      $(blockClassNm).data("gubun",'0');
+      $(blockClassNm).css('display','none');
+      $('.ic_s_ggs2').removeClass("reflect");
+      return;
+    }
+
+    for(var i = 1; i <= total; i++) {
+      var noneClassNm = '.flist'+i;
+      var ggsClassNm = '.ggss'+i;
+
+      if(param == i) {
+        $(blockClassNm).css('display','block');
+        $(blockClassNm).data("gubun",param);
+        $(ggsClassNm).addClass("reflect");
+      } else {
+        $(noneClassNm).css('display','none');
+        $(noneClassNm).data("gubun",param);
+        $(ggsClassNm).removeClass("reflect");
+      }
+      
+    }
+}
+</script>
